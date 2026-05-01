@@ -1,3 +1,4 @@
 n = float(input('me fale seu valor: '))
-resultado = n * 10
-print('O valor informado {} equivale á {}!'.format(n,resultado))
+cm = n * 100
+mm = n * 100
+print(f'O valor informado {n} equivale á {cm} e {mm}!')
