@@ -1,0 +1,7 @@
+km = float(input('Quantos Km foram percorridos?: '))
+dias = int(input('Quantos dias ele foi alugado?: '))
+
+pago = (dias * 60) + (km * 0.15)
+
+
+print(pago)
