@@ -1,0 +1,7 @@
+
+nome = input('Digite seu nome: ')
+
+print(nome.upper())  # Fica TUDO MAIÚSCULO
+print(nome.lower())  # fica tudo minúsculo
+print(len(nome.replace(' ','')))     # Mostra a quantidade de letras (já sem espaços)
+print(nome.find(' '))
