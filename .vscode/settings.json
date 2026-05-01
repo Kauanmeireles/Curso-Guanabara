@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./import ",
+        "./import "
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:system"
+}
