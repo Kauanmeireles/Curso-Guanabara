@@ -1,0 +1,5 @@
+n = int(input('Me fale o Saldo do banco: '))
+cotação = 3.27
+dolar = n / cotação 
+
+print(f'Voce pode comprar o dolar {dolar:.2f}')

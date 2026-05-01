@@ -1,0 +1,3 @@
+n = int(input('Digite um valor: '))
+r = n**(1/2)
+print('Analizando o valor {}, o dobro é {}, o triplo é {}, e a raiz quadrada é {:.2f}!'.format(n,(n*2),(n*3),(r)))
