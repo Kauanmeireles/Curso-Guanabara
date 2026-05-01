@@ -1,0 +1,9 @@
+import random
+alunos = []
+for i in range(4):
+    nomes = input('Me fale os nomes dos alunos: ')
+    alunos.append(nomes)
+    
+alunos.sort()
+for aluno in alunos:
+    print(aluno)
