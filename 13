@@ -1,7 +1,8 @@
-salário = float(input('Digite seu salário: R$ '))
+salário = float(input('Digite seu salário: '))
 porcentagem = float(input('Digite a porcentagem: '))
 
-aumento = salário + (salário * porcentagem/100)
+aumento = salário * (porcentagem/100)
+novo_salario = salário + aumento 
 
-print(f'Seu salário novo é: R$ {aumento:.2f}')
+print(f'Seu salário novo é: R$ {novo_salario:.2f}')  
 
