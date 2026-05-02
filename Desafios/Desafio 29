@@ -1,0 +1,6 @@
+velocidade_carro = int(input('Digite A velocidade do carro: '))
+multa = (velocidade_carro - 80) * 7 
+if velocidade_carro <= 80:
+    print('Voce esta em ordem!')
+else:
+    print(f'Voce passou a multa será: R${multa}')
