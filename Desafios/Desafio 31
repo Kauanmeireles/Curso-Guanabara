@@ -1,0 +1,9 @@
+km = int(input('Digite a Distacia da viagem: '))
+
+if km <= 200:
+   passagem = (km*0.50)
+   print(f'sua passagem é:{passagem:.2f}')
+else:
+    passagem = (km*0.45)
+    print(f'sua passagem custa: {passagem:.2f} ')
+ 

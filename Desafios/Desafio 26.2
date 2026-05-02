@@ -1,1 +1,4 @@
-frase = int(input('Escreva uma Frase: '))
+frase = str(input('Escreva uma Frase: ')).upper().strip()
+print(f'Sua frase aparece o a {frase.count('A')}')
+print(f'Sua frase aparece pela primeira vez: {frase.find('A') +1} ')
+print(f'Sua frase termina com a na posição: {frase.rfind('A')+1}')

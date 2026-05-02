@@ -1,0 +1,21 @@
+import random
+from time import sleep
+acertou = False
+computador = random.randint(1,5)
+print('-=-'*20)
+print('Pensando...')
+print('-=-'* 20)
+while not acertou:
+ jogador = int(input('Digite um numero de 1 a 5: '))
+ sleep(3)
+ if jogador == computador:
+    print(f'Parabens voce acertou o numero era {computador}!')
+    acertou = True
+ else:
+    if jogador < computador:
+       print('Mais.....Tente Novamente')
+    else:
+       print('Menos.....tente novamente')
+
+print('Voce acertou :)')
+  

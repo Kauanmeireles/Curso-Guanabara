@@ -1,0 +1,18 @@
+import random
+acertou = False 
+computador = random.randint(1,5)
+print('-=-' * 20)
+print('Pensando em um numero...') 
+print('-=-'*20)
+while not acertou:
+    jogador = int(input('Que Numero eu pensei entre 1 e 5: '))
+    if jogador == computador :
+     print(f'Parabens voce Acertou! o numero era {computador}')
+     acertou = True
+    else:
+     if jogador < computador:
+         print('Mais ... Tente Novamente')
+
+     else:
+        print('Menos.....Tente novamente')
+print('Parabens voce acertou!')
