@@ -1,0 +1,14 @@
+n1 = int(input('Digite o primeiro numero: '))
+n2 = int(input('Digite o segundo numero: '))
+n3 = int(input('Digite o terceiro numero: '))
+
+if n1 < n2 + n3 and n2 < n1 + n3 and n3 < n1 + n3: # para descobrir se e um triangulo 
+    print('Voce tem um triangulo! ', end = '')
+    if n1 == n2 == n3:
+        print('Equilatero')
+    elif n1 != n2 != n3:
+        print('Escaleno')
+    else:
+        print('ISOSCELES')
+else:
+    print('os segmentos nao pordem se formar em triangulo.')

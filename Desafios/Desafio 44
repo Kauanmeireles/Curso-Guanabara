@@ -1,0 +1,26 @@
+preco = float(input('Digite o valor das compras: '))
+print('''-=-=-=Formas de pagamento-=-=-=
+[1] à vista  dinheiro/cheque
+[2] à vista no cartão 
+[3] em até 2x no cartão
+[4] 3x ou mais no cartão
+ =-=-==-=-==-=-==-=-==-=-==-=-==-=-=''')
+ 
+opçao = int(input('Qual é sua opção?: '))
+if opçao == 1:
+    preçofinal = preco - (preco *0.10)
+    print(f'Seu valor com 10% de desconto foi: {preçofinal:.2f}')
+elif opçao == 2:
+    preçofinal = preco - (preco * 0.05)
+    print(f'Seu valor à vista no cartão foi: {preçofinal:.2f}')
+elif opçao == 3:
+    preçofinal = preco/2
+    print(f'Seu valor de parcelado em 2x é:{preçofinal:.2f}')
+elif opçao == 4:
+    parcelas = int(input('Quantas Parcelas?: '))
+    preçofinal = (preco + preco * 0.20)/ parcelas 
+    print(f'Seu valor parcelado em {parcelas} é: {preçofinal:.2f}')
+else:
+    print('Escolha uma opção valida') 
+
+                 

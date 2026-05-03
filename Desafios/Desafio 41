@@ -1,0 +1,25 @@
+from datetime import datetime
+try:
+ ano = int(input('Digite o ano do atleta: '))
+except ValueError:
+ print('Digite um numero por favor.')
+ exit()
+
+ano_atual = datetime.now().year
+idade = ano_atual - ano
+if  idade <= 9:
+ print(f'O atleta é mirim sua, sua idade é: {idade} anos. ')
+
+elif idade <= 14:
+ print(f'O atleta é infantil, sua idade é: {idade} anos. ')
+
+elif  idade <= 19:
+ print(f'O atleta é Junior, sua idade é {idade} anos. ')
+
+elif idade <= 25:
+ print(f'Seu atleta é Senior, sua idade é {idade} anos. ')
+
+else:
+ print(f'Seu atleta é master, sua idade é {idade}')
+
+

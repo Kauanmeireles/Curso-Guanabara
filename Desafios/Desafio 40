@@ -1,0 +1,20 @@
+notas = []
+for i in range(2):
+   try:
+
+      nota = float(input(f'Digite a {i+1} nota do aluno: '))
+      notas.append(nota)
+   except ValueError:
+      print('Por Favor coloque um valor!')
+      exit()
+
+soma = sum(notas)
+media = soma/len(notas)
+
+if media < 5:
+    print(f'\033[1;31mVoce Foi reprovado... Media: {media}\033[m')
+elif 5 <= media < 7:
+    print(f'Voce esta de exame... Media: {media}')
+else:
+    print(f'\033[1;32mVoce esta aprovado! Média: {media}\033[m')
+    
