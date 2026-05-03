@@ -1,0 +1,8 @@
+quantidade = 3
+numeros = []
+for i in range(quantidade):
+    numero = int(input(f'Me fale {i+1} numero: '))
+    numeros.append(numero)
+
+print(f'o maior numero é {max(numeros)}')
+print(f'o menor numero é {min(numeros)}')
