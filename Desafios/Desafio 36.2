@@ -1,0 +1,22 @@
+import time
+
+print('-=-'*20)
+print('Banco Digital')
+print('-=-'*20)
+time.sleep(2)
+valor_casa = float(input('Digite o valor da casa: R$'))
+salario = float(input('Digite o valor do Salário: R$'))
+anos = int(input('Em quantos anos voce vai pagar?: R$'))
+
+meses = anos * 12
+prestacao = valor_casa/meses
+limite = salario * 0.30
+print('Analisando.....')
+time.sleep(3)
+
+if prestacao <= limite:
+    print('\033[1;32mSeu Emprestimo foi aprovado!...\033[m')
+else:
+    print('\033[1;31mSeu Emprestimo foi recusado....\033[m')
+print(f'Prestação:  R${prestacao:.2f}')
+print(f'Limite Permitido: R${limite:.2f}')
