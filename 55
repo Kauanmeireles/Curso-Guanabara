@@ -1,0 +1,7 @@
+pesos = []
+for i in range(1, 6):
+    peso = float(input(f"Digite o peso da {i}ª pessoa:"))
+    pesos.append(peso)
+
+print(f"Maior peso: {max(pesos)}kg")
+print(f"Menor peso: {min(pesos)}kg")
